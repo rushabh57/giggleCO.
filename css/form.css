@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*
+
+{
+    margin:0; padding: 0; box-sizing: border-box;
+}
+:root{
+--Montserrat: 'Montserrat', sans-serif;
+--Poppins: 'Poppins', sans-serif;
+
+--Bebas : 'Bebas Neue', cursive;
+
+/* --borderClr:  */
+/* linear-gradient(
+          90deg,
+          transparent ,
+          rgb(172, 177, 214 , 0.6) , 
+          rgb(172, 177, 214 , 0.4) , 
+          rgb(172, 177, 214) , 
+          rgb(172, 177, 214 , 0.4) , 
+          rgb(172, 177, 214 , 0.6) , 
+          transparent); */
+
+
+--black:#04293A;
+--white:#FFF;
+
+--bgClr1:#FFEAD2;
+--bgClr1_1:#F6F1F1;
+
+--fontClr:#181D31;
+--fontClr_1:#f6f6f6;
+
+--clr1:rgb(220, 224, 234);
+--Clr1_1:#DBDFEA; 
+--clr2:rgb(172, 177, 214);
+--clr3:rgb(103, 137, 131);
+--clr3_1:rgb(126, 166, 159);
+--Clr4:#90A17D;
+
+ /* --Clr60:#5e6253;  */
+ --Clr60:#e6d7c0; 
+ --Clr60_1:#497174; 
+ --Clr30:#604f47; 
+ --Clr10:#9c877a;
+
+ --bx: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+
+--main-Border:1px solid red;
+--main-sub-Border:1px solid blue;
+--sub-sub-Border:1px solid green;
+}
+
+
+body
+{
+    min-height: 100vh;
+    background-color: var(--bgClr1);
+
+}
+
+

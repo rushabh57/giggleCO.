@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*
+
+{
+    margin:0; padding: 0; box-sizing: border-box;
+}
+
+:root{
+--Montserrat: 'Montserrat', sans-serif;
+--Poppins: 'Poppins', sans-serif;
+
+--Bebas : 'Bebas Neue', cursive;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+#Boll
+{
+animation: bounce2 2s    ease-in-out infinite;
+}
+@keyframes bounce2 
+{
+	0%, 20%, 50%, 80%, 100% 
+    {
+    transform: translateY(0)  scale(1, 1);
+    }
+	40% {transform: translateY(-20px)  ;}
+	60% {transform: translateY(200px) scale(1, 1.05);}
+}
+
+.loader-container
+{
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255,255,255,0.55);
+
+    
+}
+
+.container
+{
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    font-family: var(--Bebas);
+    font-size: 2.5rem;
+    height: 100%;
+    width: 100%;
+}
+.text
+{
+    height: 5rem;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.text h2{
+    text-align: center;
+    position: absolute;
+    top: -99%;
+    left: 5%;
+    font-size: 3rem;
+    pointer-events: none;
+    user-select: none;
+}
+.text h2:nth-child(1)
+{
+    color: #497174;
+}
+.text h2:nth-child(2)
+{
+    color: #604f47;
+}
+.text h2:nth-child(3)
+{
+    color: #e6d7c0;
+}
+.text h2:nth-child(4)
+{
+    color:#9c877a;
+}
+.text h2:nth-child(5)
+{
+    color:#04293A;
+}
+
+
+
+</style>
+<body>
+
+
+    <div class="loader-container">
+    <div class="container">
+      <div class="text">
+          <h2>Men's Wear</h2>
+          <h2>Women's Wear</h2>
+          <h2>Kid's Wear</h2>
+          <h2> spects</h2>
+          <h2> Shoes</h2>
+      </div>
+    </div>
+    
+    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    width="250.000000pt" height="250.000000pt" 
+    viewBox="0 0 500.000000 400.000000"
+    preserveAspectRatio="xMidYMid meet">
+    
+   <g 
+   transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
+   fill="#000000" 
+   stroke="red">
+   <path 
+   d="M764 2276 c-60 -51 -20 -146 61 -146 43 0 83 34 91 77 5 27 1 37 -24
+   63 -39 38 -88 41 -128 6z" id="Boll"/>
+   <path d="M2347 2254 c-4 -4 -7 -166 -7 -361 l0 -353 75 0 75 0 -2 358 -3 357
+   -65 3 c-36 2 -69 0 -73 -4z"/>
+   <path d="M280 2220 c-110 -23 -200 -95 -248 -199 -23 -47 -27 -70 -27 -146 0
+   -82 3 -97 33 -157 36 -73 87 -124 161 -160 40 -20 62 -23 161 -23 112 0 118 1
+   185 35 l70 35 3 143 3 143 -68 -3 -68 -3 -3 -102 -3 -101 -31 -11 c-45 -16
+   -123 -14 -166 5 -123 51 -167 209 -92 327 40 64 99 90 190 85 58 -3 76 -9 115
+   -36 l46 -32 47 45 47 46 -39 34 c-70 63 -212 96 -316 75z"/>
+   <path d="M3733 2220 c-110 -23 -203 -93 -250 -189 -25 -50 -28 -67 -28 -156 0
+   -89 3 -106 28 -157 35 -72 110 -140 185 -168 48 -18 73 -21 152 -18 105 5 158
+   24 218 81 l32 31 -46 47 -47 48 -40 -34 c-45 -39 -85 -50 -157 -43 -161 16
+   -235 218 -132 357 59 80 199 95 287 32 l47 -33 43 42 c24 23 41 48 39 55 -8
+   19 -88 74 -131 89 -53 19 -150 26 -200 16z"/>
+   <path d="M1196 2058 c-60 -8 -119 -48 -160 -105 -24 -35 -30 -55 -34 -116 -3
+   -45 0 -89 8 -112 16 -47 72 -111 120 -135 78 -40 186 -35 244 11 15 12 30 19
+   33 16 13 -14 -11 -93 -37 -118 -49 -49 -176 -49 -258 1 l-32 20 -25 -50 c-14
+   -27 -25 -53 -25 -58 0 -14 85 -50 149 -63 157 -30 285 16 344 126 21 38 22 56
+   25 313 l3 273 -68 -3 c-66 -3 -68 -4 -71 -31 l-3 -27 -34 25 c-39 31 -110 44
+   -179 33z m175 -155 c74 -74 31 -204 -71 -213 -61 -5 -83 1 -115 33 -61 61 -53
+   153 17 197 50 32 129 24 169 -17z"/>
+   <path d="M1857 2059 c-26 -4 -68 -19 -92 -34 -145 -84 -152 -315 -13 -415 80
+   -59 205 -62 281 -8 l30 21 -5 -47 c-10 -83 -72 -124 -176 -113 -30 3 -76 17
+   -102 30 l-47 25 -26 -54 -27 -54 23 -14 c73 -49 227 -69 318 -43 83 25 120 54
+   154 122 l30 60 0 260 0 260 -67 3 -68 3 0 -31 0 -30 -38 25 c-46 31 -112 43
+   -175 34z m143 -134 c39 -20 60 -63 60 -121 0 -39 -5 -51 -34 -80 -30 -30 -40
+   -34 -85 -34 -63 0 -105 20 -126 60 -18 35 -19 97 -1 128 31 57 123 80 186 47z"/>
+   <path d="M2809 2059 c-130 -19 -218 -122 -219 -253 0 -88 18 -134 75 -193 40
+   -41 62 -55 109 -68 104 -30 219 -11 283 47 l22 20 -36 43 -35 43 -42 -24 c-89
+   -51 -226 -10 -226 68 0 17 14 18 184 18 152 0 185 3 189 15 11 27 -13 129 -41
+   174 -50 82 -156 126 -263 110z m110 -124 c24 -12 61 -67 61 -89 0 -3 -56 -6
+   -125 -6 -69 0 -125 3 -125 6 0 20 34 72 58 86 33 21 94 23 131 3z"/>
+   <path d="M4330 2058 c-209 -31 -293 -296 -141 -448 131 -131 363 -95 446 69 9
+   19 20 60 22 92 18 189 -127 316 -327 287z m120 -133 c39 -20 61 -65 61 -123 1
+   -60 -13 -94 -46 -120 -60 -47 -146 -33 -185 30 -17 27 -20 45 -17 97 3 58 6
+   66 40 97 42 39 96 45 147 19z"/>
+   <path d="M750 1800 l0 -260 75 0 75 0 0 260 0 260 -75 0 -75 0 0 -260z"/>
+   <path d="M4773 1705 c-61 -26 -72 -97 -24 -146 40 -39 82 -39 122 0 47 48 35
+   121 -26 146 -40 18 -32 18 -72 0z"/>
+   </g>
+   </svg>
+
+</div>
+
+<!-- Gsap Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js "  ></script>
+
+<script>
+const animationTimeline = gsap.timeline({
+    repeat:-1 , 
+    defaults:
+    {
+        ease:'power2',
+        duration:2,
+
+    }
+})
+animationTimeline
+.to(' .text h2 ' ,
+{
+    stagger:2,
+    top:0
+}, 'a'  )
+
+.to(' .text h2 ' ,
+{
+    delay:2,
+    stagger:2,
+    top:'-100%'
+}, 'a'  )
+
+.to('#Boll' ,
+{
+    fill:'#497174',
+    delay:1,
+    duration:1,
+    ease:'power4'
+},'a')
+.to('#Boll' ,
+{
+    fill:'#604f47',
+    duration:1,
+    delay:3,
+    ease:'power4'
+},'a')
+.to('#Boll' ,
+{
+    fill:'#e6d7c0',
+    duration:1,
+    delay:5,
+    ease:'power4'
+},'a')
+.to('#Boll' ,
+{
+    duration:1,
+    fill:'#9c877a',
+    delay:7,
+    ease:'power4'
+},'a')
+.to('#Boll' ,
+{
+    duration:1,
+    fill:'#04293A',
+    delay:9,
+    ease:'power4'
+},'a')
+
+
+</script>
+   
+</body>
+</html>
